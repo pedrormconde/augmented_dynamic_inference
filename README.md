@@ -1,15 +1,9 @@
-# M/V-ATTA
+# Dynamic Augmented Inference
 
-
-## Introduction
-
-This page presents the code for the uncertainty calibration methods M-ATTA and V-ATTA, presented in the paper "Approaching Test Time Augmentation in the Context of Uncertainty Calibration for Deep Neural Networks", submitted to the IEEE Transactions on Pattern Analysis and Machine Intelligence. A pre-print version of this paper can be found at: https://arxiv.org/abs/2304.05104
-
-![model_highlevel_2](https://github.com/pedrormconde/MV-ATTA/assets/74596251/c84f9f60-185f-41d5-ab50-94fd7e67f361)
 
 ## Instructions
 
-We refer to Secion 4 of the referred paper, before using the code here presented, in order for the user to understand how to construct th inputs for our models. 
+We refer to Secion 4 of the paper, before using the code here presented, in order for the user to understand how to construct th inputs for our models. 
 
 The inputs for training and testing to be used with our models must be located in the directories 'data/train' and 'data/test', respectively. The inputs must be of the form:
 
@@ -19,7 +13,7 @@ The inputs for training and testing to be used with our models must be located i
 
 - 'labels.npy', a numpy array of shape $(N,)$ where $N$ equals number of samples in the set. Each sample in the array 'labels.npy' is the true class of the respective sample in the previous arrays.
 
-To train and test both M-ATTA and V-ATTA we refer to the files 'M-ATTA.py' and 'V-ATTA.py', respectively. In both files we find
+To train and test both M-ADI and U-ADI we refer to the files 'M-ADI.py' and 'U-ADI.py', respectively. In both files we find
 
 ```
 if __name__=='__main__':
